@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "public": true,
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ],
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "vercel-php@0.7.1"
+    }
+  ],
+  "env": {
+    "APP_NAME": "portofolio",
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://raendhana-portofolio.vercel.app",
+    "APP_KEY": "base64:kb8kL22Ayu7KmVLDynsOXinPMhDKYbJMgrNpwMQbrGE=",
+    
+    
+    "VERCEL": "true",
+    "APP_STORAGE": "/tmp",
+    
+    "APP_CONFIG_CACHE": "/tmp/config.php",
+    "APP_EVENTS_CACHE": "/tmp/events.php",
+    "APP_PACKAGES_CACHE": "/tmp/packages.php",
+    "APP_ROUTES_CACHE": "/tmp/routes.php",
+    "APP_SERVICES_CACHE": "/tmp/services.php",
+    "VIEW_COMPILED": "/tmp/views",
+    
+    "CACHE_DRIVER": "array",
+    "LOG_CHANNEL": "stderr",
+    "SESSION_DRIVER": "cookie"
+  }
+}
