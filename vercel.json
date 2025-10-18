@@ -13,7 +13,7 @@
   "env": {
     "APP_NAME": "portofolio",
     "APP_ENV": "production",
-    "APP_DEBUG": "false",
+    "APP_DEBUG": "true",
     "APP_URL": "https://raendhana-portofolio.vercel.app",
     "APP_KEY": "base64:kb8kL22Ayu7KmVLDynsOXinPMhDKYbJMgrNpwMQbrGE=",
     
