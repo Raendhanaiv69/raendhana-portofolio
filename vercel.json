@@ -1,6 +1,7 @@
 {
   "version": 2,
   "public": true,
+  "outputDirectory": "public",
   "builds": [
     { "src": "api/index.php", "use": "vercel-php@0.7.4" }
   ],
