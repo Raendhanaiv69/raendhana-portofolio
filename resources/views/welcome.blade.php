@@ -194,7 +194,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
             <div class="w-full max-w-xs bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate-on-scroll">
-                <img src="{{ asset('image/PORTOFOLIO1.png')}}" alt="Aplikasi Web Klinik Lunox"
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410272/PORTOFOLIO1_cfk310.png" alt="Aplikasi Web Klinik Lunox"
                     class="rounded-t-xl w-full h-48 object-cover object-top">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Aplikasi Web Klinik Lunox</h3>
@@ -218,7 +218,7 @@
             </div>
 
             <div class="w-full max-w-xs bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate-on-scroll">
-                <img src="{{ asset('image/PORTOFOLIO3.png')}}" alt="Dashboard Carbonstock"
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410271/PORTOFOLIO3_w2hjlb.png" alt="Dashboard Carbonstock"
                     class="rounded-t-xl w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Dashboard Monitoring Carbonstock</h3>
@@ -235,11 +235,11 @@
         <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">CERTIFICATES</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
-            <img src="{{ asset('image/SERTIFIKAT_BOOTCAMP.jpg') }}" alt="Sertifikat UI/UX Bootcamp"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410374/SERTIFIKAT_BOOTCAMP_cnzrds.jpg" alt="Sertifikat UI/UX Bootcamp"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
-            <img src="{{ asset('image/sertif_ABGD.jpg') }}" alt="Sertifikat Asisten Praktikum"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410321/E_-_Sertifikat_Alat_Bantu_Gambar_Digital_untuk_Antarmuka_Aplikasi_an._Raendhana_Ilmi_Vadhiasih_page-0001_r6oszw.jpg" alt="Sertifikat Asisten Praktikum"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
-            <img src="{{ asset('image/Sertif_magang.jpg') }}" alt="Sertifikat Magang"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410295/WhatsApp_Image_2025-06-19_at_14.12.57_148a093b_n6vjmo.jpg" alt="Sertifikat Magang"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
             <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761409313/sertifikat_HKI_sbi8nh.jpg" alt="Sertifikat Hak Cipta"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
