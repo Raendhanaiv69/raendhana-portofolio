@@ -207,7 +207,7 @@
             </div>
 
             <div class="w-full max-w-xs bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate-on-scroll">
-                <img src="{{ asset('image/PORTOFOLIO1.png')}}" alt="Aplikasi Web SMILE"
+                <img src="{{ asset('storage/image/PORTOFOLIO1.png') }}" alt="Aplikasi Web SMILE">
                     class="rounded-t-xl w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Aplikasi Web SMILE</h3>
