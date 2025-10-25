@@ -241,7 +241,7 @@
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
             <img src="{{ asset('image/Sertif_magang.jpg') }}" alt="Sertifikat Magang"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
-            <img src="{{ asset('image/sertifikat_HKI.jpg') }}" alt="Sertifikat Hak Cipta"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761409313/sertifikat_HKI_sbi8nh.jpg" alt="Sertifikat Hak Cipta"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
         </div>
     </section>
