@@ -123,8 +123,7 @@
                 class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-lg transform rotate-6 hover:rotate-0 transition-transform duration-300 bg-pink-300 p-2 animate-on-scroll">
                 <div class="absolute inset-0 bg-gradient-to-br from-pink-300 to-yellow-200 opacity-75 rounded-2xl z-0">
                 </div>
-                <img src="/image/ilmi-cans.png" alt="profile"
-                    class="relative z-10 w-full h-full object-cover rounded-xl border-4 border-white shadow-md">
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761407635/akuu_cnjopf.jpg" alt="Foto Ilmi" class="relative z-10 w-full h-full object-cover rounded-xl border-4 border-white shadow-md">
             </div>
 
             <div class="max-w-xl text-center md:text-left animate-on-scroll">
