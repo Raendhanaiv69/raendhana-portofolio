@@ -64,6 +64,31 @@
                 opacity: 1;
             }
         }
+
+        /* Custom style untuk gambar di Design Documentation agar full cover, disesuaikan */
+        .design-img-container {
+            width: 100%;
+            max-width: 320px;
+            /* max-w-xs in Tailwind is 128px * 2.5 = 320px */
+            aspect-ratio: 4/3;
+            /* Contoh rasio aspek, bisa disesuaikan */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .design-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Pastikan gambar mengisi container tanpa terdistorsi */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .design-img-container img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 
@@ -80,7 +105,8 @@
             Hello, I am
         </p>
 
-        <h1 class="text-center font-bold text-pink-custom leading-tight mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl max-w-full">
+        <h1
+            class="text-center font-bold text-pink-custom leading-tight mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl max-w-full">
             RAENDHANA ILMI VADHIASIH
         </h1>
 
@@ -92,7 +118,8 @@
             Ensuring stable, user-friendly, and high-quality digital products.
         </p>
 
-        <button class="btn-gradient font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full mt-4 shadow-md hover:opacity-90 transition-opacity duration-300 text-sm sm:text-base">
+        <button
+            class="btn-gradient font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full mt-4 shadow-md hover:opacity-90 transition-opacity duration-300 text-sm sm:text-base">
             More About Me
         </button>
 
@@ -123,7 +150,8 @@
                 class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-lg transform rotate-6 hover:rotate-0 transition-transform duration-300 bg-pink-300 p-2 animate-on-scroll">
                 <div class="absolute inset-0 bg-gradient-to-br from-pink-300 to-yellow-200 opacity-75 rounded-2xl z-0">
                 </div>
-                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761407635/akuu_cnjopf.jpg" alt="Foto Ilmi" class="relative z-10 w-full h-full object-cover rounded-xl border-4 border-white shadow-md">
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761407635/akuu_cnjopf.jpg" alt="Foto Ilmi"
+                    class="relative z-10 w-full h-full object-cover rounded-xl border-4 border-white shadow-md">
             </div>
 
             <div class="max-w-xl text-center md:text-left animate-on-scroll">
@@ -162,86 +190,194 @@
         </div>
     </section>
 
-    <section id="skills" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
-        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">Skills</h2>
+    <section id="skills" class="container mx-auto px-6 py-24 md:py-16">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-5xl font-bold text-gray-800 mt-2">
+                Exploring my expertise <br />
+                <span class="text-yellow-500">Behind My Designs & Developments</span>
+            </h2>
+        </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-            <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 hover:shadow-lg animate-on-scroll">
-                <h3 class="font-bold text-lg mb-2 text-pink-custom">Testing</h3>
-                <p class="text-gray-600">Functional, Usability, Regression, UAT</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-8 justify-items-center">
+            <!-- Trello -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello"
+                        class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Trello</p>
+                <p class="text-yellow-500 font-bold">90%</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 hover:shadow-lg animate-on-scroll">
-                <h3 class="font-bold text-lg mb-2 text-pink-custom">Test Documentation</h3>
-                <p class="text-gray-600">Test Case, Test Scenario, Bug Report</p>
+
+            <!-- Adobe XD -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD"
+                        class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Adobe XD</p>
+                <p class="text-yellow-500 font-bold">30%</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 hover:shadow-lg animate-on-scroll">
-                <h3 class="font-bold text-lg mb-2 text-pink-custom">Tools</h3>
-                <p class="text-gray-600">Excel, Trello, Jira, Git</p>
+
+            <!-- Canva -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"
+                        class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Canva</p>
+                <p class="text-yellow-500 font-bold">98%</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 hover:shadow-lg animate-on-scroll">
-                <h3 class="font-bold text-lg mb-2 text-pink-custom">Development</h3>
-                <p class="text-gray-600">Laravel, Bootstrap, Tailwind</p>
+
+            <!-- Figma -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
+                        class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Figma</p>
+                <p class="text-yellow-500 font-bold">95%</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 hover:shadow-lg animate-on-scroll">
-                <h3 class="font-bold text-lg mb-2 text-pink-custom">Design</h3>
-                <p class="text-gray-600">Figma (Wireframe, Prototype, Design System)</p>
+
+            <!-- Postman -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                        alt="Postman" class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Postman</p>
+                <p class="text-yellow-500 font-bold">85%</p>
+            </div>
+
+            <!-- Laravel -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                        alt="Laravel" class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Laravel</p>
+                <p class="text-yellow-500 font-bold">90%</p>
+            </div>
+
+            <!-- Photoshop -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                        alt="Photoshop" class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Photoshop</p>
+                <p class="text-yellow-500 font-bold">60%</p>
+            </div>
+
+            <!-- Adobe Illustrator -->
+            <div class="flex flex-col items-center space-y-2">
+                <div
+                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                        alt="Illustrator" class="w-10 h-10">
+                </div>
+                <p class="text-gray-700 font-semibold text-sm mt-1">Illustrator</p>
+                <p class="text-yellow-500 font-bold">85%</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
-        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">PROJECT EXPERIENCE</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
-            <div class="w-full max-w-xs bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate-on-scroll">
-                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410272/PORTOFOLIO1_cfk310.png" alt="Aplikasi Web Klinik Lunox"
-                    class="rounded-t-xl w-full h-48 object-cover object-top">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Aplikasi Web Klinik Lunox</h3>
-                    <p class="text-sm text-gray-600 mb-4">
-                        Peran: Menyusun test case, melakukan pengujian CRUD data pasien, validasi form appointment, serta
-                        menulis bug report untuk meningkatkan kualitas aplikasi.
-                    </p>
-                </div>
-            </div>
+    <section id="projects" class="container mx-auto px-6 py-10 md:py-10 animate-on-scroll">
+    <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE</h2>
 
-            <div class="w-full max-w-xs bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate-on-scroll">
-                <img src="{{ asset('storage/image/PORTOFOLIO1.png') }}" alt="Aplikasi Web SMILE"
-                    class="rounded-t-xl w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Aplikasi Web SMILE</h3>
-                    <p class="text-sm text-gray-600 mb-4">
-                        Peran: Menguji fitur autentikasi, validasi input, serta melakukan UAT bersama end-user untuk
-                        memastikan kemudahan penggunaan aplikasi.
-                    </p>
-                </div>
-            </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
+                alt="Desain Kartu Nama" class="w-full rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Desain Kartu Nama</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-4">Tampilan profesional dengan gaya minimalis dan palet warna lembut.</p>
+            <a href="#"
+                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                Lihat Project
+            </a>
+        </div>
 
-            <div class="w-full max-w-xs bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate-on-scroll">
-                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410271/PORTOFOLIO3_w2hjlb.png" alt="Dashboard Carbonstock"
-                    class="rounded-t-xl w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dashboard Monitoring Carbonstock</h3>
-                    <p class="text-sm text-gray-600 mb-4">
-                        Peran: Melakukan pengujian fungsional dan integrasi, validasi data prediksi Machine Learning,
-                        serta pelaporan bug selama proses pengembangan.
-                    </p>
-                </div>
-            </div>
+        <!-- Project 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
+                alt="Poster Promosi" class="w-full rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Poster Promosi</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-4">Desain visual yang menarik perhatian dan mudah dibaca pengguna.</p>
+            <a href="#"
+                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                Lihat Project
+            </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
+                alt="UI Aplikasi Mobile" class="w-full rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">UI Aplikasi Mobile</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-4">Fokus pada kemudahan navigasi dan pengalaman pengguna yang intuitif.</p>
+            <a href="#"
+                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                Lihat Project
+            </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
+                alt="Banner Web Responsif" class="w-full rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Banner Web Responsif</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-4">Gaya flat design yang responsif untuk tampilan berbagai perangkat.</p>
+            <a href="#"
+                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                Lihat Project
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <section id="design" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
+        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">
+            DESIGN DOCUMENTATION
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761999576/1_ubnkx8.png" alt="Design 1"
+                class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761999564/4_fnypkk.png" alt="Design 2"
+                class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761999564/5_wfecq0.png" alt="Design 3"
+                class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761999564/3_kgrc24.png" alt="Design 4"
+                class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
         </div>
     </section>
 
+    <!-- === CERTIFICATES (dipindah ke paling bawah) === -->
     <section id="certificates" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
         <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">CERTIFICATES</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410374/SERTIFIKAT_BOOTCAMP_cnzrds.jpg" alt="Sertifikat UI/UX Bootcamp"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410374/SERTIFIKAT_BOOTCAMP_cnzrds.jpg"
+                alt="Sertifikat UI/UX Bootcamp"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410321/E_-_Sertifikat_Alat_Bantu_Gambar_Digital_untuk_Antarmuka_Aplikasi_an._Raendhana_Ilmi_Vadhiasih_page-0001_r6oszw.jpg" alt="Sertifikat Asisten Praktikum"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410321/E_-_Sertifikat_Alat_Bantu_Gambar_Digital_untuk_Antarmuka_Aplikasi_an._Raendhana_Ilmi_Vadhiasih_page-0001_r6oszw.jpg"
+                alt="Sertifikat Asisten Praktikum"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410295/WhatsApp_Image_2025-06-19_at_14.12.57_148a093b_n6vjmo.jpg" alt="Sertifikat Magang"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410295/WhatsApp_Image_2025-06-19_at_14.12.57_148a093b_n6vjmo.jpg"
+                alt="Sertifikat Magang"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761409313/sertifikat_HKI_sbi8nh.jpg" alt="Sertifikat Hak Cipta"
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761409313/sertifikat_HKI_sbi8nh.jpg"
+                alt="Sertifikat Hak Cipta"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
         </div>
     </section>
