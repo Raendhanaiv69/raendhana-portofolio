@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
 
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -240,7 +242,7 @@
                         class="w-10 h-10">
                 </div>
                 <p class="text-gray-700 font-semibold text-sm mt-1">Figma</p>
-                <p class="text-yellow-500 font-bold">95%</p>
+                <p class="text-yellow-500 font-bold">90%</p>
             </div>
 
             <!-- Postman -->
@@ -251,7 +253,7 @@
                         alt="Postman" class="w-10 h-10">
                 </div>
                 <p class="text-gray-700 font-semibold text-sm mt-1">Postman</p>
-                <p class="text-yellow-500 font-bold">85%</p>
+                <p class="text-yellow-500 font-bold">50%</p>
             </div>
 
             <!-- Laravel -->
@@ -291,58 +293,74 @@
 
 
     <section id="projects" class="container mx-auto px-6 py-10 md:py-10 animate-on-scroll">
-    <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE</h2>
+        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
-        <!-- Project 1 -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
-                alt="Desain Kartu Nama" class="w-full rounded-lg mb-4">
-            <h3 class="text-lg font-semibold">Desain Kartu Nama</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-4">Tampilan profesional dengan gaya minimalis dan palet warna lembut.</p>
-            <a href="#"
-                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
-                Lihat Project
-            </a>
-        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
 
-        <!-- Project 2 -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
-                alt="Poster Promosi" class="w-full rounded-lg mb-4">
-            <h3 class="text-lg font-semibold">Poster Promosi</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-4">Desain visual yang menarik perhatian dan mudah dibaca pengguna.</p>
-            <a href="#"
-                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
-                Lihat Project
-            </a>
-        </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4 ">
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
+                    alt="Desain Kartu Nama" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Web Klinik LUNOX</h3>
+                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Melalui website ini, pasien dapat mengenal profil dokter, melihat jadwal praktik, serta memperoleh informasi seputar layanan dan lokasi klinik untuk 
+                    mendukung kemudahan dalam membuat janji temu.</p>
 
-        <!-- Project 3 -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
-                alt="UI Aplikasi Mobile" class="w-full rounded-lg mb-4">
-            <h3 class="text-lg font-semibold">UI Aplikasi Mobile</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-4">Fokus pada kemudahan navigasi dan pengalaman pengguna yang intuitif.</p>
-            <a href="#"
-                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
-                Lihat Project
-            </a>
-        </div>
+                <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                    <button @click="open = !open" type="button"
+                        class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                        Lihat Project
+                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
 
-        <!-- Project 4 -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-4 hover:scale-105 transition-transform duration-300">
-            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
-                alt="Banner Web Responsif" class="w-full rounded-lg mb-4">
-            <h3 class="text-lg font-semibold">Banner Web Responsif</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-4">Gaya flat design yang responsif untuk tampilan berbagai perangkat.</p>
-            <a href="#"
-                class="inline-block bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
-                Lihat Project
-            </a>
-        </div>
-    </div>
-</section>
+                    <div x-show="open"
+                        class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 origin-top">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="https://docs.google.com/spreadsheets/d/1-GnjPCnrFTdXhsI4wMm2VhG-rQCBYOFMtjE1dXePzok/edit?gid=1608856653#gid=1608856653"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 mb-1" role="menuitem">UAT Test Case</a>
+                            <a href="https://drive.google.com/file/d/1pJX9hZFq6U27qJ1TdW7HuDsrl5oUIgTd/view?usp=drive_link"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Dokumentasi Bug</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4">
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png"
+                    alt="Poster Promosi" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Web Klinik Smile</h3>
+                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Melalui website ini, pasien dapat mengenal profil dokter, melihat jadwal praktik, serta memperoleh informasi seputar layanan 
+                    dan lokasi klinik untuk mendukung kemudahan dalam membuat Antrian.</p>
+
+                <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                    <button @click="open = !open" type="button"
+                        class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                        Lihat Project
+                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <div x-show="open"
+                        class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 origin-top">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="https://docs.google.com/spreadsheets/d/1XxerLSmlrVn80w3UhJlf1B9IzIAGGiqEF2--AIBnB7c/edit?gid=211626889#gid=211626889"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">UAT Test Case</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                role="menuitem">Dokumentasi Bug</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    </section>
 
 
     <section id="design" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
