@@ -336,9 +336,9 @@
 
 
     <section id="projects" class="container mx-auto px-6 py-10 md:py-10 animate-on-scroll">
-        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE</h2>
+        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE UI DESIGN</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2  gap-10 justify-items-center">
 
             <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4 ">
                 <span
@@ -354,7 +354,7 @@
                     untuk
                     mendukung kemudahan dalam membuat janji temu.</p>
 
-                <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                {{-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
                     <button @click="open = !open" type="button"
                         class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
                         Lihat Project
@@ -369,16 +369,12 @@
                     <div x-show="open"
                         class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 origin-top">
                         <div class="py-1" role="menu" aria-orientation="vertical">
-                            <a href="https://www.figma.com/proto/zEDyEdWQMbNOKeWTT6qvTY/LUNOX?node-id=210-370&t=yv3tTgYCvtSIAyza-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=187%3A193"
+                            <a href="https://www.figma.com/design/zEDyEdWQMbNOKeWTT6qvTY/LUNOX?node-id=0-1&t=ex1n0OXBXuZtJGz4-1"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 mb-1" role="menuitem">UI
                                 Screens Preview</a>
-                            {{-- <a
-                                href="https://drive.google.com/file/d/1pJX9hZFq6U27qJ1TdW7HuDsrl5oUIgTd/view?usp=drive_link"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Dokumentasi Bug</a> --}}
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
             <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4 ">
@@ -392,7 +388,7 @@
                     pengguna yang kesulitan dalam mencari informasi mengenai posisi dan keberadaan transportasi umum,
                     seperti bus dan angkot, di Kota Bandung. </p>
 
-                <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                {{-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
                     <button @click="open = !open" type="button"
                         class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
                         Lihat Project
@@ -410,13 +406,9 @@
                             <a href="https://www.figma.com/proto/DYE2QkDdknvFCCGUVGm5yP/NgiderBandung?node-id=58-111&p=f&t=K1nGkRNRaTGrn1Ta-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 mb-1" role="menuitem">UI
                                 Screens Preview</a>
-                            {{-- <a
-                                href="https://drive.google.com/file/d/1pJX9hZFq6U27qJ1TdW7HuDsrl5oUIgTd/view?usp=drive_link"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Dokumentasi Bug</a> --}}
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
             <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4">
@@ -426,12 +418,11 @@
                 </span>
                 <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764577385/lu_shop_ju4r5z.png"
                     alt="Poster Promosi" class="w-full rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Web Klinik Smile</h3>
-                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Melalui website ini, pasien dapat mengenal
-                    profil dokter, melihat jadwal praktik, serta memperoleh informasi seputar layanan
-                    dan lokasi klinik untuk mendukung kemudahan dalam membuat Antrian.</p>
+                <h3 class="text-lg font-semibold">Web LUNOX Shop</h3>
+                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Melalui website ini, pengalaman belanja yang lebih mudah, praktis, dan nyaman 
+                    untuk mendapatkan berbagai kebutuhan perawatan gigi dan mulut</p>
 
-                <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                {{-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
                     <button @click="open = !open" type="button"
                         class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
                         Lihat Project
@@ -446,14 +437,47 @@
                     <div x-show="open"
                         class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 origin-top">
                         <div class="py-1" role="menu" aria-orientation="vertical">
-                            <a href="https://www.figma.com/proto/rQqc0kJiq5VOZDqDRwUORP/SHOP-LUNOX?page-id=0%3A1&node-id=101-8&viewport=443%2C232%2C0.19&t=0vQvqU8IfIug9BNs-1&scaling=scale-down&content-scaling=fixed"
+                            <a href="https://www.figma.com/design/rQqc0kJiq5VOZDqDRwUORP/SHOP-LUNOX?node-id=0-1&t=87CzldLbjNWCDwVK-1"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">UI
                                 Screens Preview</a>
-                            {{-- <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Dokumentasi Bug</a> --}}
                         </div>
                     </div>
-                </div>
+                </div> --}}
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4">
+                <span
+                    class="inline-block bg-green-200 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                    Client Project
+                </span>
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1763007227/DOkumen_Porto_2_etpmch.png"
+                    alt="Poster Promosi" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Web Klinik Smile</h3>
+                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Melalui website ini, pasien dapat mengenal
+                    profil dokter, melihat jadwal praktik, serta memperoleh informasi seputar layanan
+                    dan lokasi klinik untuk mendukung kemudahan dalam membuat Antrian.</p>
+
+                {{-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                    <button @click="open = !open" type="button"
+                        class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                        Lihat Project
+                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <div x-show="open"
+                        class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 origin-top">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="https://www.figma.com/design/9Pt10qo1EXSMGjvh7LFnP3/SMILE-WEB?node-id=0-1&t=f19ZJ4HqoYASj7Uj-1"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">UI
+                                Screens Preview</a>
+                        </div>
+                    </div>
+                </div> --}}
             </div>
 
 
@@ -495,6 +519,52 @@
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
         </div>
     </section>
+
+    <footer class="bg-black text-white py-12 mt-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-3xl font-bold">Raendhana Ilmi V.</h3>
+                    <p class="text-yellow-200 mt-1">Web Developer | UI/UX Designer</p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-12 mb-6 md:mb-0">
+                    <div class="flex flex-col items-center sm:items-start">
+                        <p class="font-bold text-lg mb-2">Navigation</p>
+                        <a href="#about" class="hover:text-yellow-200 transition-colors duration-300">About Me</a>
+                        <a href="#projects" class="hover:text-yellow-200 transition-colors duration-300">Projects</a>
+                        <a href="#skills" class="hover:text-yellow-200 transition-colors duration-300">Skills</a>
+                    </div>
+                    
+                    <div class="flex flex-col items-center sm:items-start">
+                        <p class="font-bold text-lg mb-2">Connect</p>
+                        <a href="mailto:raendhana@gmail.com"
+                            class="hover:text-yellow-200 transition-colors duration-300">Email</a>
+                        <a href="tel:089665908930"
+                            class="hover:text-yellow-200 transition-colors duration-300">Phone</a>
+                        <a href="https://www.linkedin.com/in/raendhana-ilmi-vadhiasih" target="_blank"
+                            class="hover:text-yellow-200 transition-colors duration-300">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/raendhana-ilmi-vadhiasih" target="_blank"
+                            class="hover:text-yellow-200 transition-colors duration-300">Instagram</a>
+                    </div>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="font-bold text-lg mb-3">Ready to Collaborate?</p>
+                    <a href="mailto:raendhana@gmail.com"
+                        class="bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-pink-400 transition-colors duration-300 shadow-md">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+
+            <hr class="border-t border-white border-opacity-30 my-8">
+
+            <div class="text-center text-sm text-white text-opacity-80">
+                &copy; 2025 Raendhana Ilmi Vadhiasih. All rights reserved.
+            </div>
+        </div>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
