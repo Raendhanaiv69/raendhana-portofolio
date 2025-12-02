@@ -544,7 +544,7 @@
                             class="hover:text-yellow-200 transition-colors duration-300">Phone</a>
                         <a href="https://www.linkedin.com/in/raendhana-ilmi-vadhiasih" target="_blank"
                             class="hover:text-yellow-200 transition-colors duration-300">LinkedIn</a>
-                        <a href="https://www.instagram.com/raendhanaiv_/" target="_blank"
+                        <a href="https://www.instagram.com/raemiv_/" target="_blank"
                             class="hover:text-yellow-200 transition-colors duration-300">Instagram</a>
                     </div>
                 </div>
