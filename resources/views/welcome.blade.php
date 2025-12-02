@@ -540,11 +540,11 @@
                         <p class="font-bold text-lg mb-2">Connect</p>
                         <a href="mailto:raendhana@gmail.com"
                             class="hover:text-yellow-200 transition-colors duration-300">Email</a>
-                        <a href="tel:089665908930"
+                        <a href="https://wa.me/6289665908930"
                             class="hover:text-yellow-200 transition-colors duration-300">Phone</a>
                         <a href="https://www.linkedin.com/in/raendhana-ilmi-vadhiasih" target="_blank"
                             class="hover:text-yellow-200 transition-colors duration-300">LinkedIn</a>
-                        <a href="https://www.linkedin.com/in/raendhana-ilmi-vadhiasih" target="_blank"
+                        <a href="https://www.instagram.com/raendhanaiv_/" target="_blank"
                             class="hover:text-yellow-200 transition-colors duration-300">Instagram</a>
                     </div>
                 </div>
