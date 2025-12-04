@@ -41,7 +41,47 @@
             box-shadow: 0 10px 15px -3px rgba(252, 141, 186, 0.3), 0 4px 6px -2px rgba(252, 141, 186, 0.1);
         }
 
-        /* Animasi */
+        /* --- Animasi Scroll Horizontal Kustom --- */
+
+        /* 1. Definisikan Keyframes Animasi */
+        /* Sesuaikan nilai -1500px jika jumlah skill bertambah atau berkurang */
+        @keyframes autoscroll-right {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(calc(-100% + 100vw - 48px)); /* Geser konten ke kiri (menggunakan lebar viewport) */
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Kelas untuk menampung animasi */
+        .skills-autoscroll {
+            /* w-max memastikan lebar kontainer sesuai dengan total lebar item */
+            width: max-content; 
+            /* Terapkan animasi: Durasi 30 detik, kecepatan konstan (linear), berulang tak terbatas (infinite), arah normal */
+            animation: autoscroll-right 30s linear infinite normal;
+        }
+
+        /* 2. Style untuk Menghentikan Animasi saat Hover */
+        .skills-autoscroll:hover {
+            animation-play-state: paused;
+        }
+        
+        /* 3. Aturan kontainer luar (agar itemnya terpotong dan bisa discroll) */
+        .skills-track-outer {
+            overflow-x: hidden; /* Sembunyikan scrollbar bawaan */
+            padding-bottom: 1rem; /* Ruang di bawah jika Anda ingin scrollbar terlihat */
+        }
+        
+        /* --- Akhir Animasi Scroll Horizontal Kustom --- */
+
+
+        /* Animasi Umum */
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(20px);
@@ -195,24 +235,24 @@
             <div class="max-w-xl text-center md:text-left animate-on-scroll">
                 <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Who Am I</h3>
                 <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-                    Saya adalah lulusan D3 Rekayasa Perangkat Lunak Aplikasi dengan fokus pada UI/UX Design dan
-                    pengembangan antarmuka web.
-                    Saya berpengalaman merancang alur pengguna, wireframe, hingga prototipe interaktif untuk proyek
-                    sistem informasi klinik,
-                    dengan menerapkan konsistensi desain, dan pendekatan berorientasi pengguna. Dalam proses desain,
-                    saya berfokus pada peningkatan efisiensi alur layanan serta menciptakan pengalaman penggunaan yang
-                    mudah dimengerti bagi pasien dan admin.
-                    Selain pengalaman proyek, saya juga pernah menjadi Asisten Praktikum Alat Bantu Gambar Digital,
-                    membimbing mahasiswa dalam memahami materi dan mendukung kelancaran proses pembelajaran.
-                    Dengan latar belakang desain dan pengalaman praktikum tersebut, saya terus berusaha menghasilkan
-                    solusi digital yang fungsional, modern, dan mudah digunakan.
+                    Saya lulusan D3 Rekayasa Perangkat Lunak Aplikasi dengan fokus pada UI/UX Design dan pengembangan
+                    antarmuka web.
+                    Berpengalaman merancang user flow, wireframe, hingga prototipe interaktif untuk sistem informasi
+                    klinik
+                    dengan menerapkan prinsip usability dan desain yang konsisten.
+                    Selain merancang antarmuka, saya juga menyusun dokumentasi seperti spesifikasi fitur dan manual book
+                    untuk mendukung pengembangan dan penggunaan sistem.
+                    Saya pernah menjadi Asisten Praktikum Alat Bantu Gambar Digital dan terbiasa bekerja terstruktur
+                    serta
+                    berorientasi pada kebutuhan pengguna dalam menghasilkan solusi digital yang fungsional dan mudah
+                    digunakan.
                 </p>
 
-                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Personal Info</h3>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">Personal Info</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-gray-700 text-base md:text-lg">
                     <div>
                         <p><strong class="font-semibold">Education :</strong> Telkom University, Rekayasa Perangkat
-                            Lunak Aplikasi</p>
+                            Lunaf Aplikasi</p>
                         <p><strong class="font-semibold">GPA :</strong> 3.77</p>
                     </div>
                     <div>
@@ -222,7 +262,7 @@
                 </div>
 
                 <button
-                    onclick="window.open('https://drive.google.com/file/d/12sEe3jfoxth_xQA3lwL8kwaPoNtzxR9H/view?usp=drive_link', '_blank');"
+                    onclick="window.open('https://drive.google.com/file/d/1yl35S7ZOTotKdN5Moq97iIfAykCxFr3D/view?usp=sharing', '_blank');"
                     class="btn-gradient font-bold py-3 px-8 rounded-full mt-8 shadow-custom-pink hover:opacity-90 transition-opacity duration-300 flex items-center gap-2 mx-auto md:ml-0">
                     Lihat CV
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -243,102 +283,96 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-8 justify-items-center">
-            <!-- Trello -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello"
-                        class="w-10 h-10">
+        <div class="skills-track-outer">
+            <div id="skill-container" class="flex space-x-8 skills-autoscroll">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                            alt="Trello" class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Trello</p>
+                    <p class="text-yellow-500 font-bold">90%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Trello</p>
-                <p class="text-yellow-500 font-bold">90%</p>
-            </div>
 
-            <!-- Adobe XD -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD"
-                        class="w-10 h-10">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD"
+                            class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Adobe XD</p>
+                    <p class="text-yellow-500 font-bold">30%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Adobe XD</p>
-                <p class="text-yellow-500 font-bold">30%</p>
-            </div>
 
-            <!-- Canva -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"
-                        class="w-10 h-10">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+                            alt="Canva" class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Canva</p>
+                    <p class="text-yellow-500 font-bold">98%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Canva</p>
-                <p class="text-yellow-500 font-bold">98%</p>
-            </div>
 
-            <!-- Figma -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
-                        class="w-10 h-10">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma" class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Figma</p>
+                    <p class="text-yellow-500 font-bold">90%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Figma</p>
-                <p class="text-yellow-500 font-bold">90%</p>
-            </div>
 
-            <!-- Postman -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
-                        alt="Postman" class="w-10 h-10">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                            alt="Postman" class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Postman</p>
+                    <p class="text-yellow-500 font-bold">50%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Postman</p>
-                <p class="text-yellow-500 font-bold">50%</p>
-            </div>
 
-            <!-- Laravel -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
-                        alt="Laravel" class="w-10 h-10">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                            alt="Laravel" class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Laravel</p>
+                    <p class="text-yellow-500 font-bold">90%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Laravel</p>
-                <p class="text-yellow-500 font-bold">90%</p>
-            </div>
 
-            <!-- Photoshop -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
-                        alt="Photoshop" class="w-10 h-10">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                            alt="Photoshop" class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Photoshop</p>
+                    <p class="text-yellow-500 font-bold">60%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Photoshop</p>
-                <p class="text-yellow-500 font-bold">60%</p>
-            </div>
 
-            <!-- Adobe Illustrator -->
-            <div class="flex flex-col items-center space-y-2">
-                <div
-                    class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
-                        alt="Illustrator" class="w-10 h-10">
+                <div class="flex flex-col items-center space-y-2 flex-shrink-0 w-32">
+                    <div
+                        class="relative w-20 h-20 rounded-full shadow-md bg-white flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                            alt="Illustrator" class="w-10 h-10">
+                    </div>
+                    <p class="text-gray-700 font-semibold text-sm mt-1">Illustrator</p>
+                    <p class="text-yellow-500 font-bold">85%</p>
                 </div>
-                <p class="text-gray-700 font-semibold text-sm mt-1">Illustrator</p>
-                <p class="text-yellow-500 font-bold">85%</p>
+                
             </div>
         </div>
     </section>
 
-
     <section id="projects" class="container mx-auto px-6 py-10 md:py-10 animate-on-scroll">
         <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE UI DESIGN</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2  gap-10 justify-items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center">
 
             <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4 ">
                 <span
@@ -419,7 +453,8 @@
                 <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764577385/lu_shop_ju4r5z.png"
                     alt="Poster Promosi" class="w-full rounded-lg mb-4">
                 <h3 class="text-lg font-semibold">Web LUNOX Shop</h3>
-                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Melalui website ini, pengalaman belanja yang lebih mudah, praktis, dan nyaman 
+                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Melalui website ini, pengalaman belanja yang
+                    lebih mudah, praktis, dan nyaman
                     untuk mendapatkan berbagai kebutuhan perawatan gigi dan mulut</p>
 
                 {{-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
@@ -481,9 +516,103 @@
             </div>
 
 
+        </div>
     </section>
 
+    <section id="manual-book" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
+        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">
+            MANUAL BOOK DESIGN
+        </h2>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+
+            <div class="flex justify-center animate-on-scroll order-2">
+                <div
+                    class="design-img-container max-w-xl rounded-xl shadow-2xl bg-yellow-100 border-2 border-pink-darker">
+                    <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764852499/1_jsoibj.png"
+                        alt="Mockup Manual Book Web Klinik LUNOX" class="w-full p-2 hover:scale-100"
+                        style="max-height: 100%;">
+                </div>
+            </div>
+
+            <div class="animate-on-scroll order-1">
+                <h3 class="text-2xl sm:text-3xl font-bold text-pink-custom mb-4">
+                    Manual Book: Web Klinik LUNOX
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+                    Manual book ini disusun sebagai panduan lengkap bagi seluruh pengguna dalam memahami dan
+                    mengoperasikan sistem LUNOΧ.
+                    Dokumen ini menjelaskan alur penggunaan fitur, fungsi setiap menu, serta tata cara menjalankan proses
+                    kerja di dalam aplikasi
+                    secara runtut dan mudah dipahami.
+                    Manual book ini ditujukan untuk berbagai tipe pengguna, seperti admin, staf operasional, maupun
+                    pasien, sehingga setiap pihak dapat menggunakan sistem LUNOΧ secara efektif dan sesuai perannya.
+                </p>
+
+                <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+                    <li><strong class="font-semibold">Cakupan:</strong> Akses sistem, Panduan untuk admin, panduan untuk
+                        pasien, FAQ.</li>
+                    <li><strong class="font-semibold">Tools:</strong> Canva, Figma.</li>
+                </ul>
+                {{-- 
+                <a href="LINK_KE_MANUAL_BOOK_PDF_ATAU_FIGMA" target="_blank"
+                    class="btn-gradient font-bold py-3 px-8 rounded-full shadow-custom-pink hover:opacity-90 transition-opacity duration-300 inline-flex items-center gap-2">
+                    Lihat Manual Book (PDF/Figma)
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 00-.707.293l-7 7a1 1 0 001.414 1.414L10 5.414l6.293 6.293a1 1 0 001.414-1.414l-7-7A1 1 0 0010 3z"
+                            clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a> --}}
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <div class="flex justify-center animate-on-scroll order-2">
+                <div
+                    class="design-img-container max-w-xl rounded-xl shadow-2xl bg-yellow-100 border-2 border-pink-darker">
+                    <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764852509/2_wtyexi.png"
+                        alt="Mockup Manual Book Web Klinik LUNOX" class="w-full p-2 hover:scale-100"
+                        style="max-height: 100%;">
+                </div>
+            </div>
+
+            <div class="animate-on-scroll order-1">
+                <h3 class="text-2xl sm:text-3xl font-bold text-pink-custom mb-4">
+                    Manual Book: Web Klinik SMILE
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+                    Dokumen ini berisi langkah-langkah penggunaan setiap fitur, mulai dari proses pendaftaran,
+                    pengelolaan data, pembuatan jadwal antrian,
+                    hingga pemantauan jadwallayanan klinik dan riwayat transaksi. Dengan adanya panduan ini, diharapkan
+                    seluruh pengguna dapat
+                    memahami fungsi sistem secara menyeluruh, meminimalkan kesalahan penggunaan,
+                    serta mempercepat proses operasional di klinik.
+                </p>
+
+                <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+                    <li><strong class="font-semibold">Cakupan:</strong> Akses sistem, Panduan untuk admin, panduan untuk
+                        pasien, FAQ.</li>
+                    <li><strong class="font-semibold">Tools:</strong> Canva, Figma.</li>
+                </ul>
+
+                {{-- <a href="LINK_KE_MANUAL_BOOK_PDF_ATAU_FIGMA" target="_blank"
+                    class="btn-gradient font-bold py-3 px-8 rounded-full shadow-custom-pink hover:opacity-90 transition-opacity duration-300 inline-flex items-center gap-2">
+                    Lihat Manual Book (PDF/Figma)
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 00-.707.293l-7 7a1 1 0 001.414 1.414L10 5.414l6.293 6.293a1 1 0 001.414-1.414l-7-7A1 1 0 0010 3z"
+                            clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a> --}}
+            </div>
+        </div>
+    </section>
 
 
     <section id="design" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
@@ -503,7 +632,6 @@
         </div>
     </section>
 
-    <!-- === CERTIFICATES (dipindah ke paling bawah) === -->
     <section id="certificates" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
         <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">CERTIFICATES</h2>
 
@@ -516,6 +644,9 @@
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
             <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761410295/WhatsApp_Image_2025-06-19_at_14.12.57_148a093b_n6vjmo.jpg"
                 alt="Sertifikat Magang"
+                class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
+            <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764825167/Raendhana_Ilmi_Vadhiasih_-_E-Certif_SC_UX_Writing_Introduction_MySkill_page-0001_t51flo.jpg"
+                alt="Sertifikat Ux writting"
                 class="w-full max-w-xs rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-on-scroll">
         </div>
     </section>
@@ -534,8 +665,9 @@
                         <a href="#about" class="hover:text-yellow-200 transition-colors duration-300">About Me</a>
                         <a href="#projects" class="hover:text-yellow-200 transition-colors duration-300">Projects</a>
                         <a href="#skills" class="hover:text-yellow-200 transition-colors duration-300">Skills</a>
+                        <a href="#certificates" class="hover:text-yellow-200 transition-colors duration-300">Certificates</a>
                     </div>
-                    
+
                     <div class="flex flex-col items-center sm:items-start">
                         <p class="font-bold text-lg mb-2">Connect</p>
                         <a href="mailto:raendhana@gmail.com"
