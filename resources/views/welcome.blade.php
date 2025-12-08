@@ -235,24 +235,20 @@
             <div class="max-w-xl text-center md:text-left animate-on-scroll">
                 <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Who Am I</h3>
                 <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-                    Saya lulusan D3 Rekayasa Perangkat Lunak Aplikasi dengan fokus pada UI/UX Design dan pengembangan
-                    antarmuka web.
-                    Berpengalaman merancang user flow, wireframe, hingga prototipe interaktif untuk sistem informasi
-                    klinik
-                    dengan menerapkan prinsip usability dan desain yang konsisten.
-                    Selain merancang antarmuka, saya juga menyusun dokumentasi seperti spesifikasi fitur dan manual book
-                    untuk mendukung pengembangan dan penggunaan sistem.
-                    Saya pernah menjadi Asisten Praktikum Alat Bantu Gambar Digital dan terbiasa bekerja terstruktur
-                    serta
-                    berorientasi pada kebutuhan pengguna dalam menghasilkan solusi digital yang fungsional dan mudah
-                    digunakan.
+                    Saya lulusan D3 Rekayasa Perangkat Lunak Aplikasi dengan fokus pada pengembangan web dan perancangan antarmuka. 
+                    Berpengalaman membuat user flow, wireframe, hingga prototipe interaktif untuk sistem informasi klinik dengan 
+                    menerapkan prinsip usability dan desain yang konsisten. Selain mendesain, saya juga melakukan pengujian website 
+                    untuk memastikan fungsionalitas dan pengalaman pengguna berjalan optimal. Saya menyusun dokumentasi seperti spesifikasi 
+                    fitur dan manual book untuk mendukung proses pengembangan. Pernah menjadi Asisten Praktikum Alat Bantu Gambar Digital, 
+                    saya terbiasa bekerja terstruktur, kolaboratif, dan berorientasi pada kebutuhan pengguna dalam menghasilkan solusi digital 
+                    yang fungsional dan mudah digunakan.
                 </p>
 
                 <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">Personal Info</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-gray-700 text-base md:text-lg">
                     <div>
                         <p><strong class="font-semibold">Education :</strong> Telkom University, Rekayasa Perangkat
-                            Lunaf Aplikasi</p>
+                            Lunak Aplikasi</p>
                         <p><strong class="font-semibold">GPA :</strong> 3.77</p>
                     </div>
                     <div>
@@ -370,7 +366,7 @@
     </section>
 
     <section id="projects" class="container mx-auto px-6 py-10 md:py-10 animate-on-scroll">
-        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE UI DESIGN</h2>
+        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-10">PROJECT EXPERIENCE</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center">
 
