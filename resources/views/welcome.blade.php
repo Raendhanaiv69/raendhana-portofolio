@@ -197,6 +197,7 @@
         </p>
 
         <button
+            onclick="window.location.href='#about'"
             class="btn-gradient font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full mt-4 shadow-md hover:opacity-90 transition-opacity duration-300 text-sm sm:text-base">
             More About Me
         </button>
@@ -407,40 +408,6 @@
                 </div> --}}
             </div>
 
-            <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4 ">
-                <span class="inline-block bg-red-200 text-red-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                    Competition Project
-                </span>
-                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764511965/Tambahkan_judul_dsxdtq.png"
-                    alt="Desain Kartu Nama" class="w-full rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Aplikasi Mobile Ngider Bandung</h3>
-                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Aplikasi mobile ini dirancang untuk membantu
-                    pengguna yang kesulitan dalam mencari informasi mengenai posisi dan keberadaan transportasi umum,
-                    seperti bus dan angkot, di Kota Bandung. </p>
-
-                {{-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
-                    <button @click="open = !open" type="button"
-                        class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
-                        Lihat Project
-                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-
-                    <div x-show="open"
-                        class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 origin-top">
-                        <div class="py-1" role="menu" aria-orientation="vertical">
-                            <a href="https://www.figma.com/proto/DYE2QkDdknvFCCGUVGm5yP/NgiderBandung?node-id=58-111&p=f&t=K1nGkRNRaTGrn1Ta-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 mb-1" role="menuitem">UI
-                                Screens Preview</a>
-                        </div>
-                    </div>
-                </div> --}}
-            </div>
-
             <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4">
                 <span
                     class="inline-block bg-green-200 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
@@ -505,6 +472,41 @@
                         <div class="py-1" role="menu" aria-orientation="vertical">
                             <a href="https://www.figma.com/design/9Pt10qo1EXSMGjvh7LFnP3/SMILE-WEB?node-id=0-1&t=f19ZJ4HqoYASj7Uj-1"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">UI
+                                Screens Preview</a>
+                        </div>
+                    </div>
+                </div> --}}
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-visible text-center p-4 ">
+                <span class="inline-block bg-red-200 text-red-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                    Competition Project
+                </span>
+                <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764511965/Tambahkan_judul_dsxdtq.png"
+                    alt="Desain Kartu Nama" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Aplikasi Mobile Ngider Bandung</h3>
+                <p class="text-gray-600 text-sm mt-2 mb-4 text-justify">Aplikasi mobile ini dirancang sebagai konsep UI untuk membantu pengguna 
+                    yang kesulitan mencari informasi mengenai posisi dan keberadaan transportasi umum, seperti bus dan angkot, di Kota Bandung. 
+                    Proyek ini masih berada pada tahap perancangan antarmuka dan belum masuk ke tahap pengembangan. Desain difokuskan pada alur penggunaan yang 
+                    sederhana serta tampilan yang informatif untuk memudahkan pengguna dalam memantau lokasi transportasi secara real-time. </p>
+
+                {{-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                    <button @click="open = !open" type="button"
+                        class="inline-flex items-center justify-center bg-pink-300 text-white font-medium px-4 py-2 rounded-lg shadow-md hover:bg-pink-400 transition-colors duration-300">
+                        Lihat Project
+                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <div x-show="open"
+                        class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 origin-top">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="https://www.figma.com/proto/DYE2QkDdknvFCCGUVGm5yP/NgiderBandung?node-id=58-111&p=f&t=K1nGkRNRaTGrn1Ta-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 mb-1" role="menuitem">UI
                                 Screens Preview</a>
                         </div>
                     </div>
