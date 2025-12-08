@@ -257,7 +257,7 @@
                     </div>
                 </div>
 
-                <button
+                {{-- <button
                     onclick="window.open('https://drive.google.com/file/d/1yl35S7ZOTotKdN5Moq97iIfAykCxFr3D/view?usp=sharing', '_blank');"
                     class="btn-gradient font-bold py-3 px-8 rounded-full mt-8 shadow-custom-pink hover:opacity-90 transition-opacity duration-300 flex items-center gap-2 mx-auto md:ml-0">
                     Lihat CV
@@ -266,7 +266,7 @@
                             d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
                             clip-rule="evenodd" />
                     </svg>
-                </button>
+                </button> --}}
             </div>
         </div>
     </section>
