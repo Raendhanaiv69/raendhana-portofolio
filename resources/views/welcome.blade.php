@@ -211,7 +211,7 @@
                 </svg>
             </a>
 
-            <a href="https://www.linkedin.com/in/raendhana-ilmi-vadhiasih" target="_blank"
+            <a href="www.linkedin.com/in/raendhanaiv" target="_blank"
                 class="text-gray-800 hover:text-pink-custom transition-colors duration-300">
                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -236,13 +236,13 @@
             <div class="max-w-xl text-center md:text-left animate-on-scroll">
                 <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Who Am I</h3>
                 <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-                    Saya lulusan D3 Rekayasa Perangkat Lunak Aplikasi dengan fokus pada pengembangan web dan perancangan antarmuka. 
-                    Berpengalaman membuat user flow, wireframe, hingga prototipe interaktif untuk sistem informasi klinik dengan 
-                    menerapkan prinsip usability dan desain yang konsisten. Selain mendesain, saya juga melakukan pengujian website 
-                    untuk memastikan fungsionalitas dan pengalaman pengguna berjalan optimal. Saya menyusun dokumentasi seperti spesifikasi 
-                    fitur dan manual book untuk mendukung proses pengembangan. Pernah menjadi Asisten Praktikum Alat Bantu Gambar Digital, 
-                    saya terbiasa bekerja terstruktur, kolaboratif, dan berorientasi pada kebutuhan pengguna dalam menghasilkan solusi digital 
-                    yang fungsional dan mudah digunakan.
+                    Saya merupakan lulusan D3 Rekayasa Perangkat Lunak Aplikasi dengan fokus pada Software Quality Assurance dan pengembangan aplikasi berbasis web. 
+                    Berpengalaman dalam melakukan manual testing, pembuatan test case, User Acceptance Testing (UAT), hingga proses Go Live aplikasi untuk memastikan 
+                    sistem berjalan sesuai kebutuhan pengguna dan memiliki fungsionalitas yang optimal. Selain itu, saya juga memiliki pemahaman dalam pengembangan web 
+                    menggunakan Laravel dan Bootstrap, sehingga membantu saya memahami alur sistem secara lebih menyeluruh dalam proses pengujian aplikasi. 
+                    Saya terbiasa menyusun dokumentasi seperti skenario pengujian, spesifikasi fitur, dan manual book untuk mendukung proses pengembangan sistem. 
+                    Pernah menjadi Asisten Praktikum Alat Bantu Gambar Digital, saya terbiasa bekerja secara terstruktur, kolaboratif, teliti, dan berorientasi 
+                    pada kualitas dalam menghasilkan solusi digital yang fungsional dan mudah digunakan.
                 </p>
 
                 <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">Personal Info</h3>
