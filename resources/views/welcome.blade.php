@@ -526,6 +526,161 @@
         </div>
     </section>
 
+    <section id="qa-expertise" class="container mx-auto px-4 sm:px-6 py-12 md:py-24 animate-on-scroll">
+        <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-4">QA TESTING EXPERTISE</h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-sm sm:text-base">
+            Memastikan kualitas produk digital melalui eksekusi pengujian yang terstruktur, pembuatan test case yang detail, dan pelaporan bug yang akurat.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">✓</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">Functional Testing</h3>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">🔄</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">Regression Testing</h3>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">✨</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">UI/UX Testing</h3>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">🚀</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">API Testing (Postman)</h3>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">🐛</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">Bug Reporting & Doc</h3>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">🌐</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">Cross Browser Testing</h3>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">📊</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">Jira & Trello</h3>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-custom font-bold text-xl mb-3">💻</div>
+                <h3 class="font-bold text-gray-800 text-sm sm:text-base">Laravel & Web Dev</h3>
+            </div>
+        </div>
+
+        <div x-data="{ open: false }" class="max-w-6xl mx-auto bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+            <button @click="open = !open" class="w-full flex items-center justify-between p-6 bg-black text-white hover:opacity-95 transition-opacity duration-300 focus:outline-none">
+                <div class="text-left">
+                    <span class="text-pink-custom font-bold text-xs uppercase tracking-wider block mb-1">Project 01</span>
+                    <h3 class="text-lg sm:text-xl font-bold">web Klinik Smile QA Testing</h3>
+                </div>
+                <div class="bg-pink-custom p-2 rounded-full text-white transform transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            </button>
+
+            <div x-show="open" 
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 max-h-0"
+                 x-transition:enter-end="opacity-100 max-h-[1500px]"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100 max-h-[1500px]"
+                 x-transition:leave-end="opacity-0 max-h-0"
+                 class="p-6 bg-white border-t border-gray-100">
+                
+                <h4 class="font-bold text-gray-800 mb-4 text-base flex items-center gap-2">
+                    <span class="w-2 h-4 bg-pink-custom rounded-full inline-block"></span> Detailed Test Cases (Authentication)
+                </h4>
+                
+                <div class="w-full overflow-x-auto rounded-xl border border-gray-200 shadow-sm mt-4">
+                    <table class="w-full table-auto divide-y divide-gray-200 text-xs sm:text-sm">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider whitespace-nowrap">TC ID</th>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider min-w-[150px]">Scenario</th>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider min-w-[200px]">Description</th>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider min-w-[180px]">Pre-condition</th>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider min-w-[180px]">Test Steps</th>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider min-w-[150px]">Data</th>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider min-w-[200px]">Expected Result</th>
+                                <th scope="col" class="px-3 py-3 text-left font-bold text-gray-700 uppercase tracking-wider min-w-[100px]">Actual Result</th>
+                                <th scope="col" class="px-3 py-3 text-center font-bold text-gray-700 uppercase tracking-wider whitespace-nowrap">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 bg-white text-gray-700">
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-3 py-3 font-semibold text-gray-900 whitespace-nowrap">Login-001</td>
+                                <td class="px-3 py-3 font-medium">Periksa Fungsi Login sukses</td>
+                                <td class="px-3 py-3">Sukses login dengan Valid email dan Password</td>
+                                <td class="px-3 py-3 text-gray-500 text-[11px] leading-relaxed">Terdapat akun yang telah terdaftar dengan:<br>Email: smile@gmail.com<br>password : Smile123</td>
+                                <td class="px-3 py-3 text-gray-600 text-[11px]">1. Akses laman login<br>2. Input valid username<br>3. Input valid password<br>4. Klik tombol login</td>
+                                <td class="px-3 py-3 text-[11px] text-gray-500">Email: smile@gmail.com<br>password : Smile123</td>
+                                <td class="px-3 py-3">user diarahkan ke halaman beranda</td>
+                                <td class="px-3 py-3 italic text-gray-500">as expected</td>
+                                <td class="px-3 py-3 text-center whitespace-nowrap">
+                                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold bg-green-100 text-green-700 rounded-md uppercase">passed</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-3 py-3 font-semibold text-gray-900 whitespace-nowrap">Login-002</td>
+                                <td class="px-3 py-3 font-medium">Periksa Fungsi Login gagal</td>
+                                <td class="px-3 py-3">Gagal login dengan valid email dan invalid password</td>
+                                <td class="px-3 py-3 text-gray-500 text-[11px] leading-relaxed">Terdapat akun yang telah terdaftar dengan:<br>Email: smile@gmail.com<br>password : Smile123</td>
+                                <td class="px-3 py-3 text-gray-600 text-[11px]">1. akses laman login<br>2. Input valid username<br>3. Input invalid password<br>4. klik tombol login</td>
+                                <td class="px-3 py-3 text-[11px] text-gray-500">Email: smile@gmail.com<br>password : Smile_123</td>
+                                <td class="px-3 py-3">user tidak dapat masuk ke beranda dan muncul wording / peringatan "email/password salah"</td>
+                                <td class="px-3 py-3 italic text-gray-500">as expected</td>
+                                <td class="px-3 py-3 text-center whitespace-nowrap">
+                                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold bg-green-100 text-green-700 rounded-md uppercase">passed</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-3 py-3 font-semibold text-gray-900 whitespace-nowrap">Login-003</td>
+                                <td class="px-3 py-3 font-medium">Periksa Fungsi Login gagal</td>
+                                <td class="px-3 py-3">Gagal login dengan invalid email dan valid password</td>
+                                <td class="px-3 py-3 text-gray-500 text-[11px] leading-relaxed">Terdapat akun yang telah terdaftar dengan:<br>Email: smile@gmail.com<br>password : Smile123</td>
+                                <td class="px-3 py-3 text-gray-600 text-[11px]">1. akses laman login<br>2. Input valid username<br>3. Input invalid password<br>4. klik tombol login</td>
+                                <td class="px-3 py-3 text-[11px] text-gray-500">Email: smileklinik@gmail.com<br>password : Smile123</td>
+                                <td class="px-3 py-3">user tidak dapat masuk ke beranda dan muncul wording / peringatan "email/password salah"</td>
+                                <td class="px-3 py-3 italic text-gray-500">as expected</td>
+                                <td class="px-3 py-3 text-center whitespace-nowrap">
+                                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold bg-green-100 text-green-700 rounded-md uppercase">passed</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-3 py-3 font-semibold text-gray-900 whitespace-nowrap">Login-004</td>
+                                <td class="px-3 py-3 font-medium">Periksa Fungsi Login gagal</td>
+                                <td class="px-3 py-3">Gagal login dengan invalid email dan invalid password</td>
+                                <td class="px-3 py-3 text-gray-500 text-[11px] leading-relaxed">Terdapat akun yang telah terdaftar dengan:<br>Email: smile@gmail.com<br>password : Smile123</td>
+                                <td class="px-3 py-3 text-gray-600 text-[11px]">1. akses laman login<br>2. Input valid username<br>3. Input invalid password<br>4. klik tombol login</td>
+                                <td class="px-3 py-3 text-[11px] text-gray-500">Email: smileklinik@gmail.com<br>password : Smile_123</td>
+                                <td class="px-3 py-3">user tidak dapat masuk ke beranda dan muncul wording / peringatan "email/password salah"</td>
+                                <td class="px-3 py-3 italic text-gray-500">as expected</td>
+                                <td class="px-3 py-3 text-center whitespace-nowrap">
+                                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold bg-green-100 text-green-700 rounded-md uppercase">passed</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-3 py-3 font-semibold text-gray-900 whitespace-nowrap">Login-005</td>
+                                <td class="px-3 py-3 font-medium">Periksa Fungsi sesion login</td>
+                                <td class="px-3 py-3">Melakukan Tes Fungsi Login session dengan menutup aplikasi tanpa logout lalu membuka kembali Web SMILE, user akan langsung masuk ke halaman beranda tanpa perlu login kembali</td>
+                                <td class="px-3 py-3 text-gray-500 text-[11px] leading-relaxed">1. Membuka Web SMILE<br>2. Sudah melakukan Login</td>
+                                <td class="px-3 py-3 text-gray-600 text-[11px]">1. akses web smile<br>2. klik tombol masuk</td>
+                                <td class="px-3 py-3 text-[11px] text-gray-400 font-light italic">No Data</td>
+                                <td class="px-3 py-3">User berhasil masuk ke dalam aplikasi tanpa perlu login kembali</td>
+                                <td class="px-3 py-3 italic text-gray-500">as expected</td>
+                                <td class="px-3 py-3 text-center whitespace-nowrap">
+                                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold bg-green-100 text-green-700 rounded-md uppercase">passed</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section id="design" class="container mx-auto px-6 py-24 md:py-16 animate-on-scroll">
         <h2 class="text-center text-3xl sm:text-5xl font-bold text-gray-800 mb-12 animate-on-scroll">
