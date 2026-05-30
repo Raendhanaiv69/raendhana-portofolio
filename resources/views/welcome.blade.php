@@ -211,7 +211,7 @@
                 </svg>
             </a>
 
-            <a href="www.linkedin.com/in/raendhanaiv" target="_blank"
+            <a href="https://www.linkedin.com/in/raendhanaiv/" target="_blank"
                 class="text-gray-800 hover:text-pink-custom transition-colors duration-300">
                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                     <path
