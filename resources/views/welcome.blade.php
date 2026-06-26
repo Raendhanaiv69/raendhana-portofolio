@@ -419,7 +419,7 @@
                     
                     <div class="mt-3 space-y-2 text-gray-600 text-sm text-justify">
                         <p><strong>Deskripsi:</strong> Konsep aplikasi mobile pelacakan real-time rute transportasi umum (bus dan angkot) di Kota Bandung.</p>
-                        <p><strong>Kontribusi Dev & SQA:</strong> Melakukan pengujian usabilitas awal (Usability Testing) melalui prototipe interaktif Figma demi menjamin *user flow* pencarian rute dibuat sesederhana mungkin sebelum masuk tahap sprint coding.</p>
+                        <p><strong>Kontribusi Dev & SQA:</strong> Melakukan pengujian usabilitas awal (Usability Testing) melalui prototipe interaktif Figma demi menjamin user flow pencarian rute dibuat sesederhana mungkin sebelum masuk tahap sprint coding.</p>
                     </div>
                 </div>
                 <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
