@@ -159,13 +159,9 @@
             SOFTWARE QUALITY ASSURANCE & WEB DEVELOPER
         </p>
 
-        <p class="text-gray-600 font-medium text-sm sm:text-base md:text-lg mt-2 max-w-2xl">
-            Berfokus pada pengembangan aplikasi web yang andal serta melakukan pengujian end-to-end yang ketat demi memastikan fungsionalitas produk digital berjalan optimal dan bebas dari celah eror.
-        </p>
-
         <button onclick="window.location.href='#projects'"
             class="btn-gradient font-bold py-3 px-8 rounded-full mt-6 shadow-custom-pink hover:opacity-90 transition-all duration-300 text-sm sm:text-base transform hover:-translate-y-1">
-            Lihat Rekam Jejak Pengujian & Dev
+            Let's See My Projects!
         </button>
 
         <div class="flex items-center justify-center mt-6 space-x-6">
@@ -189,8 +185,10 @@
             <div class="max-w-xl text-center md:text-left">
                 <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Who Am I</h3>
                 <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6 text-justify">
-                    Saya merupakan lulusan D3 Rekayasa Perangkat Lunak Aplikasi dengan spesialisasi ganda yang solid di bidang <strong>Software Quality Assurance (SQA)</strong> dan <strong>Web Development</strong>. Berbekal kemampuan teknis di kedua lini tersebut, saya memiliki keunggulan dalam memahami arsitektur kode sekaligus merancang skenario pengujian yang komprehensif. Saya berpengalaman dalam mengelola siklus hidup pengujian aplikasi mulai dari penyusunan <em>test case</em>, eksekusi manual testing, integrasi fitur kompleks (seperti Point System dan Google Calendar API), koordinasi User Acceptance Testing (UAT), hingga proses Go-Live untuk memastikan sistem bebas dari bug kritis dan siap pakai oleh pengguna akhir.
-                </p>
+                    Hai! Saya Raendhana, lulusan D3 Rekayasa Perangkat Lunak Aplikasi dari Telkom University yang memiliki ketertarikan di bidang Software Quality Assurance. 
+                    Saya senang memastikan aplikasi berjalan dengan baik melalui pengujian manual maupun otomatis. Berpengalaman menyusun test case, test scenario, dan test plan, 
+                    serta terbiasa berkolaborasi dengan pengguna dan tim developer untuk menghadirkan aplikasi yang berkualitas. 
+                    Saya juga selalu antusias mempelajari teknologi baru dan terus mengembangkan kemampuan di dunia QA.
 
                 <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">Personal Info</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-gray-700 text-base md:text-lg">
@@ -283,7 +281,7 @@
     <section id="projects" class="container mx-auto px-6 py-16 animate-on-scroll">
         <div class="text-center mb-12">
             <h2 class="text-3xl sm:text-5xl font-bold text-gray-800">PROJECT EXPERIENCE</h2>
-            <p class="text-gray-600 mt-2 font-medium">Rekam jejak kontribusi pengembangan sistem dan penjaminan kualitas aplikasi (Testing & Dev)</p>
+            
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-7xl mx-auto">
@@ -345,7 +343,7 @@
                     </div>
                     <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1761997124/DOkumen_Porto_gwlu5b.png" alt="Web Klinik LUNOX" class="w-full rounded-lg mb-4 object-cover h-48">
                     <h3 class="text-xl font-bold text-gray-800">Web Klinik LUNOX (Booking System)</h3>
-                    <p class="text-xs font-semibold text-pink-custom mb-2">Independent Project</p>
+                    <p class="text-xs font-semibold text-pink-custom mb-2">Lunox Dental Clinic</p>
                     
                     <div class="mt-3 space-y-2 text-gray-600 text-sm text-justify">
                         <p><strong>Deskripsi:</strong> Aplikasi web profil dokter, jadwal praktik, serta manajemen janji temu medis secara real-time.</p>
@@ -368,7 +366,7 @@
                     </div>
                     <img src="https://res.cloudinary.com/dqwuxciqw/image/upload/v1764577385/lu_shop_ju4r5z.png" alt="Web LUNOX Shop" class="w-full rounded-lg mb-4 object-cover h-48">
                     <h3 class="text-xl font-bold text-gray-800">Web E-Commerce: LUNOX Shop</h3>
-                    <p class="text-xs font-semibold text-pink-custom mb-2">Independent Project</p>
+                    <p class="text-xs font-semibold text-pink-custom mb-2">Lunox Dental Clinic</p>
                     
                     <div class="mt-3 space-y-2 text-gray-600 text-sm text-justify">
                         <p><strong>Deskripsi:</strong> Platform e-commerce khusus produk kesehatan gigi dan mulut yang dilengkapi Point & Top-Up System.</p>
